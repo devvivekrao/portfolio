@@ -1,0 +1,39 @@
+@import "./variables";
+
+@import "./others";
+
+@import "./nav";
+
+@import "./asids";
+
+
+//  main 
+main{
+
+    width: 75%;
+    margin: auto;
+    
+    @import "./hero";
+
+    @import "./aboutme";
+
+    @import "./projects";
+
+    @import "./contact";
+
+}
+
+
+@import "./footer";
+
+
+// for mobile devices
+
+@import "./mobile";
+
+
+
+
+
+
+

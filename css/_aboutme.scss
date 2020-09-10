@@ -1,0 +1,84 @@
+.aboutMe{
+
+    width: 100%;
+    height: 90vh;
+    margin-left: 3rem;
+    margin-top: 5rem;
+    
+    div:first-child{
+
+        display: flex;
+        align-items: center;        
+        p{
+            width: 22%;
+            font-size: 2.1rem;
+            color: $third;
+    
+            span{
+                font-weight: 700;
+                border: none;
+            }
+        }
+        
+        span{
+            width: 15rem;
+            border-bottom: 1px solid $fourth;
+        }
+
+       
+    }
+
+    div:last-child{
+        
+        display: flex;
+        margin-top: 5rem;
+        // align-items: center;
+        // justify-content: center;
+    
+            img{
+                border: 1px solid $secondry;
+                height: 300px;
+                width: 300px;
+                margin:3rem;
+            //   opacity: 0.3;
+            //   background-color: red;
+            }
+            img:hover{
+
+                opacity: 1;
+            }
+
+        div{
+
+            margin-top: 5rem;
+            margin-left: 2rem;
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            p{
+                font-size: 1.1rem;
+                color: $secondry;   
+            }
+
+            ul{
+                display: grid;
+                padding: 0px;
+                grid-template-columns: repeat(2, minmax(140px, 200px)); 
+                gap: 5px;
+                overflow: hidden;
+                margin: 20px 0px 0px;
+                list-style: none;
+                margin-top: 1.5rem;
+                li{
+                    color: $secondry;
+                    // margin: px;
+                    span{
+                        font-weight: 700;
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+}

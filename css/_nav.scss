@@ -1,0 +1,53 @@
+nav{
+    
+    width: 100%;
+    top: 0;
+    position: fixed;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+     background: $primary;
+ 
+    box-shadow: 0px 6px 30px rgba(0, 0, 0, 0.25);
+
+    >div{
+        display: none;
+    }
+ 
+    h2{  
+         font-size: 2rem;
+         margin-left: 7rem;
+         color: $secondry;
+         font-weight: 700;
+ 
+        
+     }
+    ul{
+     
+         margin-right: 7rem;
+         display: flex;
+         align-items: center;
+         justify-content: space-around;
+     li{
+         margin: 0 1rem;
+         text-transform: capitalize;
+     }
+ 
+     .btn{
+         
+         border: 1px solid $third;
+         color: $third;
+         border-radius: 8px;
+         padding: 0.3rem 1.2rem;
+     }
+     .btn:hover{
+         background-color: $third;
+         color: $primary;
+         cursor: pointer;
+     }
+ 
+    }
+ 
+ }

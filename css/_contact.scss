@@ -1,0 +1,54 @@
+.contact{
+
+    width: 100%;
+    height: 90vh;
+    margin-left: 3rem;
+    margin-top: 8rem;
+  
+    .row{
+
+        display: flex;
+        align-items: center;        
+        p{
+            width: 26%;
+            font-size: 2.1rem;
+            color: $third;
+    
+            span{
+                font-weight: 700;
+                border: none;
+            }
+        }
+        
+        span{
+            width: 15rem;
+            border-bottom: 1px solid $fourth;
+        }
+       
+    }
+
+    >p{
+        margin-top: 10rem;
+        font-size: 1.1rem;
+        color: $secondry;
+        // padding-left: 4rem;
+        text-align: center;
+    }
+
+
+    .big-icons{
+
+        margin-top: 8rem;
+        margin-left: -3rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+
+        i{
+            transform: scale(5);
+
+        }
+
+    }
+
+}

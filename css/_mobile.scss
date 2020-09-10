@@ -1,0 +1,349 @@
+
+@media only screen and (max-width: 600px) and (min-width: 360px)  {
+
+    *{
+        // all:unset;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: 'Poppins', sans-serif;
+        text-transform: capitalize;
+
+    }
+
+    body{
+        
+        all: unset;
+        width: 100%;
+        background-color: $primary;
+        
+    }
+    html{
+        
+        font-size: 14px;
+        font-weight: 400;
+
+    }
+
+    aside{
+        display: none;
+        // opacity: 0;
+    }
+    
+
+    nav{
+        
+        h2{
+            font-size: 1.7rem;
+            margin-left: 1.5rem;
+        }
+        
+        >div{
+            position: absolute;
+            display: block;
+            right: 0;
+            transform: scale(2);
+            margin-right: 2rem;
+            
+            i{
+                color: $third;
+                font-weight: 700;
+            }
+
+        }
+        
+        .menu{
+            
+            position: absolute;
+            top: -60vh;
+            display: flex;
+            height: 40vh;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+            width: 100%;
+            background: #132541;
+            // opacity: 0;
+            // pointer-events: none;
+
+            // animation: all 1s ease-in 500;
+            
+
+          li{
+    
+            // border-bottom: 1px solid $primary;
+              a{
+                  font-size: 1rem;
+                  color: $secondry;
+              }
+              .btn{
+         
+                border: 1px solid $secondry;
+                color: $secondry;
+                margin-bottom: 20px;
+    
+            }
+          }
+        }
+
+        .showUl{
+            
+            top: 10vh;
+            pointer-events: all;
+            
+        }
+
+    }
+    
+
+    main{
+
+            .hero{
+            
+                margin-left: 0;
+                margin-top: -30px;
+
+            p{
+                font-size: 1.2rem;
+            }
+            div:first-child{
+        
+                p{
+                    color: $third;
+                }
+                
+                h1:first-of-type{
+        
+                    color:$fourth;
+                    font-size: 2.8rem;
+        
+                }
+                h1:last-of-type{
+                    
+                    color:$secondry;
+                    font-size: 1.4rem;
+                    margin-top: 1.2rem;
+                }
+
+            }// div
+        
+            div:last-child{
+            
+                margin-top: 1rem;
+            
+                p{
+                    color: $third;
+                    text-align: left;
+
+                    font-size: 1.1rem;
+                    
+                }
+        
+                .btnDiv{
+        
+                    margin-top: 3rem;
+            
+                    button{
+        
+                        height: 3rem;
+                        width: 14rem;
+                        font-size: 18px;
+                        display: block;
+                        cursor: pointer;
+                        margin: 20px auto;
+        
+                    }
+                    button:first-of-type{
+                        
+                        color: $third;
+                        border: 1px solid $third;
+                        background: transparent;
+                        border-radius: 10px;
+                    }
+                    button:first-of-type:hover {
+                        
+                        color: $primary;
+                        background: $secondry;
+                        border: 0;
+                        outline: none;
+                        
+                    }
+                    button:last-of-type{
+                        
+                        color: $primary;
+                        background: $third;
+                        border-radius: 10px;
+                        outline: none;
+                        border: 0;
+                        margin: 20px auto;
+
+            
+                    }
+                    button:last-of-type:hover {
+                        
+                        background: $secondry;
+                    
+                    }
+                }
+        
+            }
+        
+        }  // hero
+        
+        .aboutMe, .projects,.contact{
+
+            margin-left: 0;
+            
+            div:first-child{
+                display: flex;
+                align-items: center;   
+                p{
+                    width: 100%;
+                    font-size: 1.5rem;
+                    color: $third;
+            
+                    span{
+                        font-weight: 700;
+                        border: none;
+                    }
+                }
+                >span{
+                    display: none;
+                }
+            }
+            
+
+        } //aboutMe contact project  ..... common css
+
+
+        .aboutMe{
+
+            height: min-content;
+
+            div:last-child{
+                display: flex;
+                flex-direction: column;
+                margin-top: 5rem;
+                align-items: center;
+                justify-content: center;
+
+                img{
+
+                    height: 250px;
+                    width: 250px;
+                    // margin-top: 10px;
+                }
+
+
+                div{
+    
+                    margin-top: 5rem;
+                    margin-left: 0;
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    p{
+                        // font-size: 1.1rem;
+                        font-size: 1.1rem;
+                        color: $secondry;  
+                        text-align: left; 
+                    }
+
+
+                    ul{
+                        display: grid;
+                        padding: 0px;
+                        grid-template-columns: repeat(1, minmax(150px, 250px)); 
+                        // gap: 6px;
+                        overflow: hidden;
+                        margin: 40px 0px;
+                        list-style: none;
+                        margin-top: 1.5rem;
+                        li{
+                            color: $secondry;
+                            // margin: px;
+                            span{
+                                font-weight: 700;
+                                margin-right: 10px;
+                            }
+                        }
+        
+                      }
+                }
+            }
+        
+        }// about me indivisual 
+    
+    
+        .projects{
+            height: min-content;
+            .featured-projects{
+
+                display: grid;
+                grid-template-columns: repeat(1,1fr);
+                margin-top: 5rem;
+                margin-right: 0;
+
+
+                .hide{
+                    display: none;
+                }
+
+            }
+
+        }
+        
+        
+        
+        .contact {
+            
+            height: min-content;
+            
+            >p{
+                margin-top: 5rem;
+                text-align: left;
+            }
+           
+            .big-icons{
+                margin-top: 7rem;
+                // width: 100%;
+                // margin: auto;
+                margin-left: 4rem;
+                display: grid;
+                grid-template-columns: repeat(2,1fr);
+                
+                row-gap: 100px;
+                // gap: 10px;
+                
+                i{
+                    transform: scale(4);
+        
+                }
+                
+            }
+
+        }
+    
+
+    } // // main 
+
+
+
+footer{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 9rem;
+
+
+
+    p{
+        margin:5px 0;
+    }
+
+}    
+
+
+}

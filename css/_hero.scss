@@ -1,0 +1,87 @@
+.hero{
+        
+    width: 100%;
+    height: 90vh;
+    margin-left: 3rem;
+    p{
+        font-size: 1.3rem;
+        color: $secondry;
+    }
+    div:first-child{
+
+        margin-top: 12rem;
+
+        p{
+            color: $third;
+        }
+        
+        h1:first-of-type{
+            
+            color:$fourth;
+            font-size: 4rem;
+            margin-bottom: -1rem;
+        }
+        h1:last-of-type{
+            
+            color:$secondry;
+            font-size: 3rem;
+        }
+    }
+
+    div:last-child{
+        
+        margin-top: 1rem;
+    
+        p{
+            color: $third;
+            text-align: left;
+            
+        }
+
+        .btnDiv{
+            // display: block;
+            margin-top: 3rem;
+            button{
+
+                height: 3rem;
+                width: 11rem;
+                font-size: 1.1rem;
+                display: inline-block;
+                cursor: pointer;
+            }
+            button:first-of-type{
+                
+                color: $third;
+                border: 1px solid $third;
+                background: transparent;
+                border-radius: 8px;
+            }
+            button:first-of-type:hover {
+                
+                color: $primary;
+                background: $secondry;
+                border: 0;
+                outline: none;
+                
+            }
+            button:last-of-type{
+                
+                color: $primary;
+                background: $third;
+                border-radius: 8px;
+                outline: none;
+                border: 0;
+                margin-left: 1.6rem;
+            }
+            button:last-of-type:hover {
+                
+                background: $secondry;
+              
+            }
+        }
+
+    }
+    
+
+
+}
